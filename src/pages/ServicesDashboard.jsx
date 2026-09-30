@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FileText, Hospital, ClipboardList, FileSignature, MessageSquare } from 'lucide-react';
+import { FileText, Hospital, ClipboardList, FileSignature, MessageSquare, Calculator } from 'lucide-react';
 
 function ServicesDashboard() {
   const services = [
@@ -36,6 +36,13 @@ function ServicesDashboard() {
       title: 'Patient Communications',
       description: 'Patient communication history and summaries. Track interactions, review patient notes, and manage communication records.',
       href: 'https://main.d2vyg46rnxg2kp.amplifyapp.com/',
+      external: true
+    },
+    {
+      icon: <Calculator className="w-8 h-8" />,
+      title: 'Pricing calculator',
+      description: 'Late-entry quote. Clinic visits left, postpartum home visits, and one total.',
+      href: 'https://s3.us-east-1.amazonaws.com/dr-julia-ray.innovation/package-pricing.html',
       external: true
     }
   ];
