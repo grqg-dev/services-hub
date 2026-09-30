@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FileText, Hospital, ClipboardList, FileSignature, MessageSquare, Calculator } from 'lucide-react';
+import { FileText, Hospital, ClipboardList, FileSignature, MessageSquare, Calculator, Package } from 'lucide-react';
 
 function ServicesDashboard() {
   const services = [
@@ -43,6 +43,13 @@ function ServicesDashboard() {
       title: 'Pricing calculator',
       description: 'Late-entry quote. Clinic visits left, postpartum home visits, and one total.',
       href: 'https://s3.us-east-1.amazonaws.com/dr-julia-ray.innovation/package-pricing.html',
+      external: true
+    },
+    {
+      icon: <Package className="w-8 h-8" />,
+      title: 'Package pricing',
+      description: 'Build a custom OB package quote and copy a patient link.',
+      href: 'https://hello.drjuliaray.com/staff/ob-package-quote.html',
       external: true
     }
   ];
